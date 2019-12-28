@@ -1199,3 +1199,134 @@ end if
 ____________________________________________________________________________________________________________________
 
 ```
+
+# Part 2
+
+```markdown
+
+Add-Exfiltration, Nishang, Используйте этот скрипт для эксфильтрации данных от цели.
+Add-Persistence, PowerSploit, Добавить возможности персистентности в скрипт.
+Add-ScrnSaveBackdoor, Nishang, Script, который может устанавливать разделы реестра Debugger для заставки для удаленного выполнения команд и сценариев.
+Base64ToString, ConvertFrom, Функция из модуля ConvertFrom, который преобразует Base64 в строку.
+Base64, Windows, Подмножество различных методов для вызова методов Base64 в PowerShell.
+Check-VM, Nishang, Script, который определяет, находится ли он в известной виртуальной машине.
+Copy-VSS, Nishang, Payload, который копирует файл SAM (а также кусты ntds.dit и SYSTEM, если работают на контроллере домена).
+Create-MultipleSessions, Nishang, Script, который может проверять учетные данные на удаленных компьютерах и может открывать сеансы PSSession, если учетные данные работают.
+Discover-PSInterestingServices, PowerShell-AD-Recon. Этот сценарий используется для обнаружения сетевых серверов с интересными службами без сканирования портов.
+Discover-PSMSExchangeServers, PowerShell-AD-Recon. Этот сценарий используется для обнаружения серверов Microsoft Exchange без сканирования портов.
+Discover-PSMSSQLServers, PowerShell-AD-Recon. Этот сценарий используется для обнаружения серверов Microsoft SQL без сканирования портов.
+DNS_TXT_Pwnage, Nishang, бэкдор, способный получать команды и сценарии PowerShell из запросов DNS TXT.
+Do-Exfiltration, Nishang, Этот сценарий можно использовать для эксфильтрации данных из цели в gmail, pastebin, веб-сервер, который может регистрировать POST-запросы, и DNS-сервер, который может регистрировать TXT-запросы.
+Download_Execute, Nishang, Payload, чтобы загрузить исполняемый файл в текстовом формате, преобразовать его в исполняемый файл и выполнить.
+Download-Execute-PS, Nishang, Payload, который загружает и выполняет сценарий PowerShell.
+DownloadFile, Windows, метод WebClient, который загружает ресурс с указанным URI в локальный файл.
+DownloadString, Windows, метод WebClient, который загружает запрошенный ресурс в виде строки. Загружаемый ресурс может быть указан либо как String, содержащий URI, либо как Uri.
+Enable-DuplicateToken, Nishang, Payload, который дублирует токен доступа lsass и устанавливает его в текущем потоке процесса.
+EncodedCommand, Parameter, Wraps DOS-недружественные командные строки таким образом, чтобы их можно было безопасно передавать в PSH для исполнения.
+Enter-PSSession, Windows, запускает интерактивный сеанс с удаленным компьютером.
+Execute-CommandMSSQL, Nishang, Payload, которые можно использовать для удаленного выполнения команд на сервере MS SQL.
+Execute-DNSTXT-Code, Nishang, Payload, который может выполнять шелл-код из DNS TXT-запросов.
+Execute-OnTime, Nishang, Payload, ожидающий заданного времени для выполнения скрипта.
+Найти AVSignature, PowerSploit, найти крошечные AV подписи.
+Find-PSServiceAccounts, PowerShell-AD-Recon. Эта функция обнаруживает все учетные записи пользователей, настроенные с помощью ServicePrincipalName в домене или лесу Active Directory.
+Get-ApplicationHost, PowerSploit, восстанавливает зашифрованные пароли приложений и пароли виртуальных каталогов из applicationHost.config в системе.
+Get-ComputerInfo, Windows, Получает объединенный объект свойств системы и операционной системы.
+Get-GPPPassword, PowerSploit, Get-GPPPassword выполняет поиск на контроллере домена groups.xml, scheduletasks.xml, services.xml и datasources.xml и возвращает незашифрованные пароли.
+Get-KerberosPolicy, PowerShell-AD-Recon, самоочевидный
+Get-Keystrokes, PowerSploit, Журналы нажатых клавиш, время и активное окно.
+Скрипт Get-LsaSecret, Nishang, Nishang, который извлекает секреты LSA с локального компьютера.
+Полезные данные Get-PassHashes, Nishang, Nishang, которые сбрасывают хэши паролей.
+GetProcAddress, Windows, извлекает адрес экспортированной функции или переменной из указанной библиотеки динамической компоновки (DLL).
+Get-PSADForestInfo, PowerShell-AD-Recon. Этот сценарий используется для сбора информации о среде Active Directory.
+Get-PSADForestKRBTGTInfo, PowerShell-AD-Recon. Эта функция обнаруживает все учетные записи KRBTGT в лесу и возвращает информацию об учетной записи.
+Get-RegAlwaysInstallElevated, PowerSploit, Проверяет, установлен ли какой-либо из разделов реестра AlwaysInstallElevated.
+Get-RegAutoLogon, PowerUp теперь PowerSploit, проверит, задан ли раздел реестра AutoAdminLogon, и извлечет все учетные данные в виде открытого текста, если он есть.
+Get-ServiceEXEPerms, PowerUp теперь PowerSploit, возвращает имя и путь для любой службы, где текущий пользователь может записать в связанный двоичный файл.
+Get-ServicePerms. PoshC2, Проверка разрешений на обслуживание
+Get-ServiceUnquoted, PowerUp теперь PowerSploit, возвращает имя и двоичный путь для служб с без кавычками, которые также имеют пробел в имени. (т. е. модуль MSF trust_service_path.rb).
+Get-TimedScreenshot, PowerSploit, делает снимки экрана через равные промежутки времени и сохраняет их на диск.
+Get-UnattendedInstallFiles, PowerSploit, Проверяет несколько мест на наличие оставшихся файлов автоматической установки, которые могут иметь учетные данные для развертывания.
+Get-VaultCredential, PowerSploit, отображает объекты учетных данных хранилища Windows, включая веб-учетные данные в виде открытого текста.
+Get-Webconfig, PowerSploit, Этот скрипт восстановит открытый текст и зашифрованные строки подключения из всех файлов web.config в системе. Кроме того, он будет расшифровывать их при необходимости.
+Get-WMIObject, Windows, Получает экземпляры классов WMI или информацию о доступных классах.
+Gupt-Backdoor, Nishang, Gupt - это бэкдор в Nishang, который может выполнять команды и сценарии от специально созданных имен беспроводных сетей.
+HTTP-Backdoor, Nishang, Payload, который запрашивает инструкции для URL-адреса, а затем загружает и выполняет сценарий powershell.
+iex, Windows, псевдоним для Invoke-Expression
+Invoke-ADSBackdoor, Invoke-AltDSBackdoor, сценарий Powershell, который будет использовать альтернативные потоки данных для достижения постоянства.
+Invoke-AllChecks, PowerUp теперь PowerSploit, запускает все текущие проверки эскалации и возвращает отчет
+Invoke-BruteForce, Nishang, Payload, который выполняет атаку грубой силой против SQL Server, Active Directory, локальных учетных записей, Интернета и FTP.
+Invoke-CallbackIEX, PowerBreach теперь PowerSploit, используется для инициирования обратного вызова к определенному узлу и запроса ресурса. Затем ресурс декодируется и выполняется как сценарий powershell. Есть много методов для обратных вызовов.
+Invoke-Command, Windows, запускает команды на локальных и удаленных компьютерах.
+Invoke-CreateCertificate, Nishang, извлекает сертификат CA из хранилища и выполняет прямую запись обратно на мобильное устройство.
+Invoke-CredentialInjection, PowerSploit. Этот сценарий позволяет злоумышленнику создавать входы с открытым текстом с учетными данными, не вызывая подозрительное событие с кодом 4648 (явный вход с учетными данными).
+Invoke-CredentialsPhish, Nishang, Script, который открывает запрос учетных данных пользователя.
+Invoke-Decode, Nishang, Script для декодирования и сжатия простых данных.
+Invoke-DllInjection, PowerSploit, внедряет Dll в идентификатор процесса по вашему выбору.
+Invoke-Encode, Nishang, Script для кодирования и сжатия простых данных.
+Invoke-Expression, Windows, Запускает команды или выражения на локальном компьютере.
+Invoke-FindDLLHijack, PowerUp теперь PowerSploit, находит возможности угона DLL для запущенных в данный момент процессов
+Invoke-FindPathHijack, PowerUp теперь PowerSploit, Находит возможности угона службы% PATH% .DLL
+Invoke-MassCommand, Empire, использует WMI и локальный веб-сервер для массового запуска команды на нескольких машинах.
+Invoke-MassMimikatz, Empire, Функции для запуска Mimikatz на большом количестве машин без использования PSRemoting.
+Invoke-MassSearch, Empire, Функции для запуска запроса индексатора поиска на большом количестве машин без использования PSRemoting.
+Invoke-MassTemplate, Empire, Template для массового запуска определенного сценария PowerShell на нескольких компьютерах с использованием локального веб-сервера и выполнения WMI.
+Invoke-MassTokens, Empire, запускает PowerSploit Invoke-TokenManiupulation на нескольких машинах, открывая временный веб-сервер и используя WMI для выполнения загрузки / вызова IEX.
+Сценарий InvokeMimikatzWDigestDowngrade, Nishang, Nishang, который может создавать пароли в виде простого текста из Windows 8.1 и Server 2012 и далее.
+InvokeNetworkRelay, Nishang, Script, который можно использовать для запуска команд пересылки / ретрансляции через порт netsh на удаленных компьютерах.
+Invoke-NinjaCopy, PowerSploit. Этот сценарий может копировать файлы с тома NTFS, открывая дескриптор чтения для всего тома (например, c :) и анализируя структуры NTFS. Это требует, чтобы вы были администратором сервера.
+Invoke-PortScan, PowerSploit / Nishang, выполняет простое сканирование портов с использованием обычных сокетов, основываясь (довольно) свободно на nmap
+Invoke-PoshRatHttp, Nishang, Script, который можно использовать для обратного интерактивного PowerShell от цели через HTTP.
+Invoke-PoshRatHttps, Nishang, Script, который можно использовать для обратного интерактивного PowerShell от цели через HTTPS.
+Invoke-PowerShellIcmp, Nishang, Script, который можно использовать для обратной интерактивной PowerShell от цели через ICMP.
+Invoke-PowerShellTcp, Nishang, Script, который можно использовать для отмены или привязки интерактивной PowerShell от цели.
+Invoke-PowerShellUdp, Nishang, Script, который можно использовать для обратного или связывания интерактивного PowerShell из целевого объекта по UDP.
+Invoke-PowerShellWmi, Nishang, Script, который можно использовать для интерактивной PowerShell через WMI.
+Invoke-PsGcatAgent, Nishang, Script, который можно использовать для выполнения команд и сценариев из Gmail, загруженных Invoke-PSGcat.
+Invoke-PSGcat, Nishang, Script, который можно использовать для отправки команд и сценариев в Gmail, которые затем можно запустить на цели с помощью Invoke-PSGcatAgent.
+Invoke-PSInject, Empire, задает блок сценариев PowerShell (в кодировке base64), исправляет декодированную логику в соответствующей ReflectivePick .dll архитектуре и внедряет результат в указанный ProcessID.
+Invoke-ServiceCMD, PowerUp теперь PowerSploit, выполнить произвольную команду из-за злоупотребления сервисом
+Invoke-ServiceDisable, PowerUp теперь PowerSploit, отключает данную службу
+Invoke-ServiceEnable, PowerUp теперь PowerSploit, включает данную службу
+Invoke-ServiceStart, PowerUp теперь PowerSploit, запускает данную службу
+Invoke-ServiceStop, PowerUp теперь PowerSploit, останавливает данную службу
+Invoke-ServiceUserAdd, PowerUp теперь PowerSploit, изменяет изменяемый сервис для создания пользователя и добавления его к локальным администраторам
+Invoke-ShellcodeMSIL, Empire, Выполнить шелл-код в контексте запущенного процесса PowerShell без каких-либо вызовов функций Win32.
+Invoke - Shellcode, PowerSploit / Empire, псевдоним для Invoke-Shellcode
+Invoke-Shellcode, PowerSploit / Empire, вставка шелл-кода в идентификатор процесса по вашему выбору или в контексте запущенного процесса PowerShell.
+Invoke-TokenManipulation, PowerSploit, для этого сценария требуются права администратора. Он может перечислять доступные токены входа и использовать их для создания новых процессов. Это позволяет вам использовать учетные данные других пользователей по сети, создав процесс с их токеном входа.
+Mimikatz, несколько наборов, пытается определить исполнение Mimikatz.
+New-ElevatedPersistenceOption, PowerSploit, Настройка параметров повышенной персистентности для функции Add-Persistence.
+Out-CHM, Nishang, Script полезен для создания файла справки скомпилированного HTML (.CHM), который можно использовать для запуска команд и сценариев PowerShell.
+Out-Excel, Nishang, Script, который может генерировать, а также «заражать» существующие файлы Excel с помощью автоматически исполняемого макроса или DDE.
+Out-HTA, Nishang, Script, который можно использовать для создания «зараженного» HTML-приложения. Его можно развернуть на веб-сервере, а сценарии и команды PowerShell можно выполнить на целевом компьютере.
+Out-Java, Nishang, Script, который можно использовать для создания JAR-файла для апплетов.
+Out-JS, Nishang, Script полезен для создания «оружейного» файла JavaScript, который можно использовать для запуска команд и скриптов PowerShell.
+Out-Minidump, PowerSploit, Генерирует мини-дамп процесса с полной памятью.
+Out-SCF, Nishang, Script полезен для создания файлов SCF, которые можно использовать для захвата хешей NTLM.
+Out-SCT, Nishang, Script полезен для создания «оружейных» файлов SCT, которые можно использовать для запуска команд и скриптов PowerShell.
+Out-Shortcut, Nishang, Script, который создает ярлык, способный запускать команды и сценарии PowerShell.
+Out-WebQuery, Nishang, Script, который создает файл веб-запроса (.iqy), который можно использовать для фишинговых атак.
+Out-Word, Nishang, Script, который может генерировать, а также «заражать» существующие файлы слов автоматически исполняемым макросом или DDE.
+Parse_Keys, Nishang, Скрипт, который можно использовать для разбора ключей, зарегистрированных полезной нагрузкой Kelogger из Nishang.
+Полезная нагрузка, просто имя, просто определить ключевое слово полезной нагрузки.
+Powercat, Powercat, версия Netcat для PowerShell.
+PowershellEmpire, PowerShell Empire, Empire - это чистый агент PowerShell для постэксплуатации, построенный на криптологически безопасных коммуникациях и гибкой архитектуре.
+Powersploit, Powersploit, PowerSploit - это набор модулей Microsoft PowerShell, которые можно использовать для помощи тестерам проникновения на всех этапах оценки.
+ReflectivePEInjection, PowerSploit, этот скрипт имеет два режима. Он может рефлексивно загружать DLL / EXE в процесс PowerShell или рефлексивно загружать DLL в удаленный процесс.
+Remove-Persistence, PowerSploit, Удалить возможности сохранения в скрипте.
+Remove-PoshRat, Nishang, Script, который удаляет правила брандмауэра, установленные PoshRat.
+Remove-Update, Nishang, Payload, который молча удаляет обновления для целевой машины.
+Restore-ServiceEXE, PowerUp, восстанавливает ранее записанный EXE с помощью Write-ServiceExe.
+Run-EXEonRemote, Nishang, Script, который может удалять и выполнять исполняемые файлы на нескольких компьютерах.
+StringtoBase64, ConvertFrom, Функция из модуля ConvertFrom, который преобразует String в Base64.
+System.Management, Windows. Предоставляет доступ к обширному набору управляющей информации и событий управления системой, устройствами и приложениями, оснащенными инфраструктурой инструментария управления Windows (WMI).
+System.Reflection, Windows, Пространство имен System.Reflection содержит типы, которые получают информацию о сборках, модулях, элементах, параметрах и других объектах в управляемом коде путем изучения их метаданных.
+TexttoEXE, Nishang, Script для преобразования PE-файла в шестнадцатеричном формате в исполняемый
+Write-CMDServiceBinary, PowerSploit, исправляет в указанной команде предварительно скомпилированный исполняемый файл службы C # и записывает двоичный файл в указанное расположение ServicePath.
+Write-ServiceEXECMD, PowerUp, Может использоваться для злоупотребления уязвимыми двоичными файлами, найденными Get-ServiceEXEPerms.
+Write-ServiceEXE, PowerUp, Может использоваться для злоупотребления уязвимыми двоичными файлами, найденными Get-ServiceEXEPerms.
+Write-UserAddMSI
+Write-UserAddServiceBinary, PowerUp теперь PowerSploit, эксплуатирует пути обслуживания без кавычек.
+wsman, Windws Object, Предоставляет методы и свойства, используемые для создания сеанса, представленного объектом Session. Любые операции удаленного управления Windows требуют создания сеанса, который подключается к удаленному компьютеру, базовому контроллеру управления (BMC) или локальному компьютеру. Операции включают получение, запись, перечисление данных или вызов методов.
+
+```
