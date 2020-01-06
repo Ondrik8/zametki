@@ -1,6 +1,8 @@
 ## Welcome to Zametki
 _________________________________________________________________________________________________
 
+[памятка](https://github.com/SofianeHamlaoui/Lockdoor-Framework/blob/master/ToolsResources/PrivEsc/CHEATSHEETS/windows_priv_escalation.md) для повышения привелегий
+
 ```markdown 
 
 Echo – команда вывода на экран
